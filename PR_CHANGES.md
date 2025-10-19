@@ -1,10 +1,12 @@
 # Pull Request Changes
 
+## Branch: `feature/add-category-description` → `main` (staging)
+
 This document outlines the changes that were made in the PR. This helps candidates understand what was added/modified.
 
 ## Overview
 
-The PR adds a `Description` field to categories and introduces new endpoints for creating and updating categories.
+The PR from `feature/add-category-description` adds a `Description` field to categories and introduces new endpoints for creating and updating categories.
 
 ## Files Changed
 

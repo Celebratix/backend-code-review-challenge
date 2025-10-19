@@ -4,16 +4,34 @@ This is a simplified ASP.NET Core Web API project designed as a code review exer
 
 ## Scenario
 
-You are reviewing a pull request that adds new features to a Categories API. The PR includes:
+You are reviewing a pull request from the `feature/add-category-description` branch that is being merged into `main` (staging). The PR adds new features to a Categories API:
+
 - Adding a `Description` field to the `Category` model
 - Adding a new `CreateCategory` endpoint
 - Modifying the `UpdateCategory` endpoint
 - Changing the `Name` property to `CategoryName` in the CategoryDto
 - Adding basic integration tests
 
+## Repository Structure
+
+```
+main                              (represents staging branch - baseline)
+  └── feature/add-category-description    (PR to be reviewed)
+```
+
+To review the changes:
+```bash
+git diff main feature/add-category-description
+```
+
+Or view specific files:
+```bash
+git diff main feature/add-category-description -- CategoriesApi/Controllers/CategoriesController.cs
+```
+
 ## Your Task
 
-Review the code changes and identify any issues, bugs, security concerns, code quality problems, or inconsistencies. Consider:
+Review the code changes in the `feature/add-category-description` branch and identify any issues, bugs, security concerns, code quality problems, or inconsistencies. Consider:
 
 1. **Security**: Are there any security vulnerabilities?
 2. **Code Quality**: Are there any code smells or bad practices?
